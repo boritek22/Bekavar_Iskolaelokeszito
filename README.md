@@ -1,0 +1,2 @@
+# Bekavar_Iskolaelokeszito
+Tájékoztató honlap tanítónők által indított iskolaelőkészítő foglalkozás iránt érdeklődő szülőknek és gyerekeiknek. Az oldal kódja Visual Studio Code segítségével íródott, html és css nyelven. A reszponzív menühöz, illetve a galériához JavaScript-et használtam. A foglalkozásokra, valamint a hely családi napjaira való jelentkezést Google Űrlapokkal oldottam meg, melyekhez egy hiavtkozott linkkel lehet eljutni. A vállalkozás sajnos nem indult be, így munkáltatót nem tudok megjelölni.
