@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset="utf-8">
+	<title>Galéria</title>
+	<link rel="icon" href="media/baba.png">
+	<link href="css/main.css" rel="stylesheet" type="text/css" title="alap">
+	<script src="js/menu.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script src="js/galery.js"></script>
+</head>
+<body>
+	<div class="header">
+		<figure>
+			<img class="center" alt="Menükép" src="media/benezo5.png">
+		</figure>
+	</div>
+	<nav>
+		<div class="menu" id="mainmenu">
+			<a href="szinezo.html" id="ikon"><img class="ikon" alt="Színező" src="media/baba.png"></a>
+			<a href="index.html">Főoldal</a>
+			<a href="hirek.html">Hírek</a>
+			<div class="dropdown">
+				<button class="dropbtn">Rólunk 
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="content">
+					<a href="bemutatkozas.html">Bemutatkozás</a>
+					<a href="kulonleges.html">Amiben mások vagyunk</a>
+					<a href="nyujtas.html">Amit nyújtani tudunk</a>
+					<a href="elsok.html">Elsők között</a>
+					<!--<a href="napirend.html">Napirend</a>-->
+					<a href="magantanulo.html">Magántanulói csoport</a>
+					<a href="jelentkezes.html">Jelentkezés</a>
+					<!--<a href="hozzajarulas.html">Szülői hozzájárulás</a>-->
+					<a href="eszkozok.html">Taneszközök</a>
+				</div>
+			</div>
+			<a href="pedagogusok.html">Szakértőink</a>					
+			<a href="elokeszito.html">Iskolaelőkészítő</a>
+			<a href="galeria.html" class="aktiv">Galéria</a>
+			<a href="kapcsolat.html">Kapcsolat</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+		</div> 	
+	</nav>
+	<main class="tartalom">
+		<div id="munkalap_folott">
+		</div>
+		<article id="munkalap1">
+			<article id="munkalap2">
+				<div id="focim">
+					<h1>Galéria</h1>		
+		<div class="row">
+				<div class="column">
+				<!--KICSI IKON AZ ELEJÉN-->
+				<table>
+				<tr>
+				<th>
+					<img src="galeria/szoba1k.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="Galéria - 1. kép">
+				</div>
+				</th>
+				<th>
+				<div class="column">
+					<img src="galeria/szoba2k.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="Galéria - 2. kép">
+				</div>
+				</th>
+				<th>
+				<div class="column">
+					<img src="galeria/szoba3k.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="Galéria - 3. kép">
+				</div>
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<div class="column">
+					<img src="galeria/szoba4k.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="Galéria - 4. kép">
+				</div>
+				</th>
+				<th>
+				<div class="column">
+					<img class="kozep" src="galeria/lepcso1k.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="Galéria - 5. kép">
+				</div>
+				</th>
+				<th>
+				<div class="column">
+					<img src="galeria/kert1k.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="Galéria - 6. kép">
+				</div>
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<div class="column">
+					<img src="galeria/kert2k.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="Galéria - 7. kép">
+				</div>
+				</th>
+				<th>
+				<div class="column">
+					<img class="kozep" src="galeria/kert3k.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="Galéria - 8. kép">
+				</div>
+				</th>
+				<th>
+				<div class="column">
+					<img src="galeria/kert4k.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="Galéria - 9. kép">
+				</div>
+				</th>
+				</tr>
+				<tr>
+				<th>
+				<div class="column">
+					<img src="galeria/kert5k.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow" alt="Galéria - 10. kép">
+				</div>
+				</th>
+				</tr>
+				</table>
+				</div>
+
+				<div id="myModal" class="modal">
+				<!--NAGY KÉP MEGNYITÁSKOR-->
+				  <span class="close cursor" onclick="closeModal()">&times;</span>
+				  <div class="modal-content">
+
+					<div class="mySlides">
+					  <div class="numbertext">1 / 10</div>
+					  <img src="galeria/szoba1.jpg" style="width:100%" alt="Galéria - 1. kép">
+					</div>
+
+					<div class="mySlides">
+					  <div class="numbertext">2 / 10</div>
+					  <img src="galeria/szoba2.jpg" style="width:100%" alt="Galéria - 2. kép">
+					</div>
+
+					<div class="mySlides">
+					  <div class="numbertext">3 / 10</div>
+					  <img src="galeria/szoba3.jpg" style="width:100%" alt="Galéria - 3. kép">
+					</div>
+
+					<div class="mySlides">
+					  <div class="numbertext">4 / 10</div>
+					  <img src="galeria/szoba4.jpg" style="width:100%" alt="Galéria - 4. kép">
+					</div>
+					
+					<div class="mySlides">
+					  <div class="numbertext">5 / 10</div>
+					  <img src="galeria/lepcso1.jpg" style="width:100%" alt="Galéria - 5. kép">
+					</div>
+					
+					<div class="mySlides">
+					  <div class="numbertext">6 / 10</div>
+					  <img src="galeria/kert1.jpg" style="width:100%" alt="Galéria - 6. kép">
+					</div>
+					
+					<div class="mySlides">
+					  <div class="numbertext">7 / 10</div>
+					  <img src="galeria/kert2.jpg" style="width:100%" alt="Galéria - 7. kép">
+					</div>
+					
+					<div class="mySlides">
+					  <div class="numbertext">8 / 10</div>
+					  <img src="galeria/kert3.jpg" style="width:100%" alt="Galéria - 8. kép">
+					</div>
+					
+					<div class="mySlides">
+					  <div class="numbertext">9 / 10</div>
+					  <img src="galeria/kert4.jpg" style="width:100%" alt="Galéria - 9. kép">
+					</div>
+					
+					<div class="mySlides">
+					  <div class="numbertext">10 / 10</div>
+					  <img src="galeria/kert5.jpg" style="width:100%" alt="Galéria - 10. kép">
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<div class="caption-container">
+					  <p id="caption"></p>
+					</div>
+
+					<div class="column">
+					<!--KIS KÉP ALUL-->
+					  <img class="demo" src="galeria/szoba1k.jpg" onclick="currentSlide(1)" alt="Szoba">
+					</div>
+
+					<div class="column">
+					  <img class="demo" src="galeria/szoba2k.jpg" onclick="currentSlide(2)" alt="Szoba">
+					</div>
+
+					<div class="column">
+					  <img class="demo" src="galeria/szoba3k.jpg" onclick="currentSlide(3)" alt="Szoba">
+					</div>
+
+					<div class="column">
+					  <img class="demo" src="galeria/szoba4k.jpg" onclick="currentSlide(4)" alt="Szoba">
+					</div>
+					
+					<div class="column">
+					  <img class="demo" src="galeria/lepcso1k.jpg" onclick="currentSlide(5)" alt="Bejárati lépcső">
+					</div>
+					
+					<div class="column">
+					  <img class="demo" src="galeria/kert1k.jpg" onclick="currentSlide(6)" alt="Kert">
+					</div>
+					
+					<div class="column">
+					  <img class="demo" src="galeria/kert2k.jpg" onclick="currentSlide(7)" alt="Kert">
+					</div>
+					
+					<div class="column">
+					  <img class="demo" src="galeria/kert3k.jpg" onclick="currentSlide(8)" alt="Kert">
+					</div>
+					
+					<div class="column">
+					  <img class="demo" src="galeria/kert4k.jpg" onclick="currentSlide(9)" alt="Kert">
+					</div>
+					
+					<div class="column">
+					  <img class="demo" src="galeria/kert5k.jpg" onclick="currentSlide(10)" alt="Kert">
+					</div>
+				  </div>
+				</div>
+				</div>
+				<p></p>
+			</article>
+		</article>
+			<footer id="labjegyzet">
+				<p></p>
+			</footer>
+			<footer class="center">
+				<en>Ehhez hasonló honlap készítésének kérése-egyeztetése a: </en><a class="fekete" href="mailto:boritek22@gmail.com">boritek22@gmail.com</a><en> e-mail címen.</en>
+			</footer>
+	</main>
+</body>
+</html>
